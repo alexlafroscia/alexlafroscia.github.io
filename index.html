@@ -6,16 +6,59 @@
     <title>Alex LaFroscia</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <base href="/" />
-
     <link rel="stylesheet" href="assets/app.css">
   </head>
   <body>
-    <script src="assets/app.js"></script>
-    <script>
-      window.ENV = {"baseURL":"/","FEATURES":{},"APP":{"LOG_RESOLVER":true,"LOG_ACTIVE_GENERATION":true,"LOG_MODULE_RESOLVER":true,"LOG_VIEW_LOOKUPS":true}};
-      window.Personal = require('personal/app')['default'].create(ENV.APP);
-    </script>
+    <div class="container">
+      <div class="header">
+        <h1>Alex LaFroscia</h1>
+        <p>Front End Developer and CS Student at the Unversity of Pittsburgh. Hacker
+           at <a href="http://mysterioustrousers.com/">Mysterious Trousers</a> and
+           Lead Frontend Dev at <a href="http://meshnetapp.com">MeshNet</a>.
+           <a href="http://emberjs.com">Ember.js</a> aficionado. Computer Geek and
+           damn proud of it.
+         </p>
+        <hr />
+      </div>
+      <div class="clearfix"></div>
+      <nav class="root-nav">
+        <ul>
+          <li>
+            <svg class="hexagon home" viewBox="0 0 202 170" xmlns="http://www.w3.org/2000/svg">
+              <title>Hexagon</title><path d="M0 84.609l50.794-84.117h100.458l50.672 83.913-49.928 84.521h-100.94l-51.056-84.317z" sketch:type="MSShapeGroup" fill="#D8D8D8"/>
+              <i class="fa fa-home"></i>
+              <span class="label">Home</span>
+            </svg>
+          </li>
+          <li>
+            <svg class="projects arrow" viewBox="0 0 180 170" xmlns="http://www.w3.org/2000/svg">
+              <title>Hexagon 2</title><path d="M51.308 84.405l-50.514-83.913h128.544l50.672 83.913-49.928 84.521h-129.027l50.252-84.521z" sketch:type="MSShapeGroup" fill="#D8D8D8"/>
+              <i class="fa fa-heart"></i>
+              <span class="label">Projects</span>
+            </svg>
+          </li>
+          <li>
+            <svg class="arrow" viewBox="0 0 180 170" xmlns="http://www.w3.org/2000/svg">
+              <title>Hexagon 2</title><path d="M51.308 84.405l-50.514-83.913h128.544l50.672 83.913-49.928 84.521h-129.027l50.252-84.521z" sketch:type="MSShapeGroup" fill="#D8D8D8"/>
+              <i class="fa fa-lock"></i>
+            </svg>
+          </li>
+          <li>
+            <svg class="tools arrow" viewBox="0 0 180 170" xmlns="http://www.w3.org/2000/svg">
+              <title>Hexagon 2</title><path d="M51.308 84.405l-50.514-83.913h128.544l50.672 83.913-49.928 84.521h-129.027l50.252-84.521z" sketch:type="MSShapeGroup" fill="#D8D8D8"/>
+              <i class="fa fa-wrench"></i>
+              <span class="label">Tools</span>
+            </svg>
+          </li>
+          <li>
+            <svg class="contact arrow" viewBox="0 0 180 170" xmlns="http://www.w3.org/2000/svg">
+              <title>Hexagon 2</title><path d="M51.308 84.405l-50.514-83.913h128.544l50.672 83.913-49.928 84.521h-129.027l50.252-84.521z" sketch:type="MSShapeGroup" fill="#D8D8D8"/>
+              <i class="fa fa-phone"></i>
+              <span class="label">Contact</span>
+            </svg>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>
