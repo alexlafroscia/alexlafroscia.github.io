@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'AmbleRegular';
-  src: url('/assets/fonts/amble_regular_macroman/Amble-Regular-webfont.eot');
-  src: url('/assets/fonts/amble_regular_macroman/Amble-Regular-webfont.eot?iefix') format('eot'), url('/assets/fonts/amble_regular_macroman/Amble-Regular-webfont.woff') format('woff'), url('/assets/fonts/amble_regular_macroman/Amble-Regular-webfont.ttf') format('truetype'), url('/assets/fonts/amble_regular_macroman/Amble-Regular-webfont.svg#webfont') format('svg'); }
+  src: url("/assets/fonts/amble_regular_macroman/Amble-Regular-webfont.eot");
+  src: url("/assets/fonts/amble_regular_macroman/Amble-Regular-webfont.eot?iefix") format("eot"), url("/assets/fonts/amble_regular_macroman/Amble-Regular-webfont.woff") format("woff"), url("/assets/fonts/amble_regular_macroman/Amble-Regular-webfont.ttf") format("truetype"), url("/assets/fonts/amble_regular_macroman/Amble-Regular-webfont.svg#webfont") format("svg"); }
 
 @font-face {
   font-family: 'AmbleLight';
-  src: url('/assets/fonts/amble_light_macroman/Amble-Light-webfont.eot');
-  src: url('/assets/fonts/amble_light_macroman/Amble-Light-webfont.eot?iefix') format('eot'), url('/assets/fonts/amble_light_macroman/Amble-Light-webfont.woff') format('woff'), url('/assets/fonts/amble_light_macroman/Amble-Light-webfont.ttf') format('truetype'), url('/assets/fonts/amble_light_macroman/Amble-Light-webfont.svg#webfont') format('svg'); }
+  src: url("/assets/fonts/amble_light_macroman/Amble-Light-webfont.eot");
+  src: url("/assets/fonts/amble_light_macroman/Amble-Light-webfont.eot?iefix") format("eot"), url("/assets/fonts/amble_light_macroman/Amble-Light-webfont.woff") format("woff"), url("/assets/fonts/amble_light_macroman/Amble-Light-webfont.ttf") format("truetype"), url("/assets/fonts/amble_light_macroman/Amble-Light-webfont.svg#webfont") format("svg"); }
 
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
@@ -16,8 +16,8 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('/assets/fonts/font-awesome/fontawesome-webfont.eot?v=4.0.3');
-  src: url('/assets/fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('/assets/fonts/font-awesome/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('/assets/fonts/font-awesome/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('/assets/fonts/font-awesome/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  src: url("/assets/fonts/font-awesome/fontawesome-webfont.eot?v=4.0.3");
+  src: url("/assets/fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("/assets/fonts/font-awesome/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("/assets/fonts/font-awesome/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("/assets/fonts/font-awesome/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -56,8 +56,9 @@
   padding-left: 0;
   margin-left: 2.14286em;
   list-style-type: none; }
-  .fa-ul > li {
-    position: relative; }
+
+.fa-ul > li {
+  position: relative; }
 
 .fa-li {
   position: absolute;
@@ -65,8 +66,9 @@
   width: 2.14286em;
   top: 0.14286em;
   text-align: center; }
-  .fa-li.fa-lg {
-    left: -1.85714em; }
+
+.fa-li.fa-lg {
+  left: -1.85714em; }
 
 .fa-border {
   padding: 0.2em 0.25em 0.15em;
@@ -81,6 +83,7 @@
 
 .fa.pull-left {
   margin-right: 0.3em; }
+
 .fa.pull-right {
   margin-left: 0.3em; }
 
@@ -1307,39 +1310,45 @@
 @media (min-width: 1040px) {
   nav li:not(:first-child) {
     margin-left: -42px; }
-    nav li:not(:first-child) .label, nav li:not(:first-child) .fa {
-      padding-left: 9px !important; }
+
+  nav li:not(:first-child) .label, nav li:not(:first-child) .fa {
+    padding-left: 9px !important; }
+
   nav li .label {
     top: 32px; }
+
   nav li .fa {
     font-size: 4em;
     top: -32px; }
+
   .hexagon {
     width: 202px;
     height: 170px; }
+
   .arrow {
     width: 180px;
     height: 170px; } }
-
 @media (min-width: 615px) and (max-width: 1040px) {
   nav li:not(:first-child) {
     margin-left: -35px; }
-    nav li:not(:first-child) .label, nav li:not(:first-child) .fa {
-      padding-left: 6px !important; }
+
+  nav li:not(:first-child) .label, nav li:not(:first-child) .fa {
+    padding-left: 6px !important; }
+
   nav li .label {
     top: 30px; }
+
   nav li .fa {
     font-size: 3.5em;
     top: -25px; }
+
   .hexagon {
     width: 155.38462px;
     height: 170px; }
+
   .arrow {
     width: 138.46154px;
     height: 170px; } }
-
-@media (max-width: 615px) { }
-
 #nav-sidebar {
   width: 0;
   background: #d4d4d4;
@@ -1355,17 +1364,18 @@
   transition: width 0.25s, padding-right 0.25s, padding-left 0.25s;
   -webkit-transition-timing-function: ease-in-out;
   timing-function: ease-in-out; }
-  #nav-sidebar.open {
-    width: 25%;
-    max-width: 280px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-    -webkit-transition: width 0.25s, padding-right 0.25s, padding-left 0.25s;
-    transition: width 0.25s, padding-right 0.25s, padding-left 0.25s;
-    -webkit-transition-timing-function: ease-in-out;
-    timing-function: ease-in-out; }
+
+#nav-sidebar.open {
+  width: 25%;
+  max-width: 280px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  -webkit-transition: width 0.25s, padding-right 0.25s, padding-left 0.25s;
+  transition: width 0.25s, padding-right 0.25s, padding-left 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  timing-function: ease-in-out; }
 
 #page {
   float: left;
@@ -1374,83 +1384,101 @@
   transition: width 0.25s;
   -webkit-transition-timing-function: ease-in-out;
   timing-function: ease-in-out; }
-  #page.nav-visible {
-    width: 75%;
-    -webkit-transition: width 0.25s;
-    transition: width 0.25s;
-    -webkit-transition-timing-function: ease-in-out;
-    timing-function: ease-in-out; }
+
+#page.nav-visible {
+  width: 75%;
+  -webkit-transition: width 0.25s;
+  transition: width 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  timing-function: ease-in-out; }
 
 #page-header {
   padding-top: 15px;
   padding-bottom: 15px;
   border-sizing: border-box; }
-  #page-header h1 {
-    display: inline;
-    padding-left: 10px; }
-  #page-header p {
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  #page-header .fa-bars {
-    font-size: 2em;
-    cursor: pointer; }
+
+#page-header h1 {
+  display: inline;
+  padding-left: 10px; }
+
+#page-header p {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+#page-header .fa-bars {
+  font-size: 2em;
+  cursor: pointer; }
 
 ul#tiny-nav {
   list-style-type: none;
   padding-left: 10px; }
-  ul#tiny-nav li {
-    -webkit-transition: padding-left 0.25s;
-    transition: padding-left 0.25s; }
-    ul#tiny-nav li a {
-      color: #111; }
-    ul#tiny-nav li.home .fa {
-      color: #aeaeae; }
-    ul#tiny-nav li.projects .fa {
-      color: #c40600; }
-    ul#tiny-nav li.tools .fa {
-      color: #2fbc52; }
-    ul#tiny-nav li.contact .fa {
-      color: #FFDC00;
-      text-shadow: 0px 0px 5px #d4d4d4; }
-    ul#tiny-nav li:hover {
-      padding-left: 20px;
-      -webkit-transition: padding-left 0.25s;
-      transition: padding-left 0.25s; }
-  ul#tiny-nav .fa {
-    padding-right: 20px; }
+
+ul#tiny-nav li {
+  -webkit-transition: padding-left 0.25s;
+  transition: padding-left 0.25s; }
+
+ul#tiny-nav li a {
+  color: #111; }
+
+ul#tiny-nav li.home .fa {
+  color: #aeaeae; }
+
+ul#tiny-nav li.projects .fa {
+  color: #c40600; }
+
+ul#tiny-nav li.tools .fa {
+  color: #2fbc52; }
+
+ul#tiny-nav li.contact .fa {
+  color: #FFDC00;
+  text-shadow: 0px 0px 5px #d4d4d4; }
+
+ul#tiny-nav li:hover {
+  padding-left: 20px;
+  -webkit-transition: padding-left 0.25s;
+  transition: padding-left 0.25s; }
+
+ul#tiny-nav .fa {
+  padding-right: 20px; }
 
 nav {
   display: block;
   margin: 0 auto; }
-  nav ul {
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0; }
-  nav li {
-    display: inline;
-    position: relative;
-    text-align: center;
-    cursor: pointer; }
-    nav li .label, nav li .fa {
-      color: #fff;
-      left: 0;
-      position: absolute;
-      width: 100%; }
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+
+nav li {
+  display: inline;
+  position: relative;
+  text-align: center;
+  cursor: pointer; }
+
+nav li .label, nav li .fa {
+  color: #fff;
+  left: 0;
+  position: absolute;
+  width: 100%; }
 
 svg {
   position: relative;
   display: table-cell;
   vertical-align: middle; }
-  svg.home path {
-    fill: grey; }
-  svg.projects path {
-    fill: #c40600; }
-  svg.tools path {
-    fill: #2fbc52; }
-  svg.contact path {
-    fill: #f5d000; }
-  svg.nav { }
+
+svg.home path {
+  fill: grey; }
+
+svg.projects path {
+  fill: #c40600; }
+
+svg.tools path {
+  fill: #2fbc52; }
+
+svg.contact path {
+  fill: #f5d000; }
 
 @-webkit-keyframes 'expandTool' {
   0% {
@@ -1668,61 +1696,69 @@ svg {
   margin-top: 8px;
   margin-bottom: 1em;
   position: relative; }
-  .tool h2 {
-    bottom: 0;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    margin: 0;
-    padding: 5px;
-    width: 100%; }
-  .tool .content {
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 5px;
-    height: 100%;
-    width: 100%;
-    opacity: 0; }
-  .tool:nth-child(2n) {
-    float: left; }
-  .tool:nth-child(2n+1) {
-    float: right; }
-  .tool.expanded {
-    width: 100%;
-    height: 250px; }
-  .tool.tutorials p {
-    width: 60%;
-    float: left; }
-  .tool.tutorials ul {
-    width: 30%;
-    float: right;
-    padding-left: 0; }
+
+.tool h2 {
+  bottom: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  margin: 0;
+  padding: 5px;
+  width: 100%; }
+
+.tool .content {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  opacity: 0; }
+
+.tool:nth-child(2n) {
+  float: left; }
+
+.tool:nth-child(2n+1) {
+  float: right; }
+
+.tool.expanded {
+  width: 100%;
+  height: 250px; }
+
+.tool.tutorials p {
+  width: 60%;
+  float: left; }
+
+.tool.tutorials ul {
+  width: 30%;
+  float: right;
+  padding-left: 0; }
 
 @media (min-width: 1040px) {
   .container, nav {
     width: 770px; } }
-
 @media (min-width: 615px) and (max-width: 1040px) {
   .container, nav {
     width: 600px; }
+
   .header {
     margin-bottom: 0 !important; } }
-
 @media (max-width: 615px) {
   .container, nav {
     widht: 100%; }
+
   .header {
     margin-top: 1em !important;
     padding-left: 1% !important;
     padding-right: 1% !important; }
+
   .flag {
     display: none !important; }
+
   .item {
     padding-left: 1% !important;
     padding-right: 1% !important;
     border-radius: 0px 6px 6px 0px !important;
     border-left: 4px solid #c40600; } }
-
 html, body {
   margin: 0;
   padding: 0; }
@@ -1733,14 +1769,18 @@ body {
 
 a {
   text-decoration: none !important; }
-  a:hover {
-    text-decoration: none !important; }
-  a:visited {
-    text-decoration: none !important; }
-  a:-webkit-any-link {
-    text-decoration: none !important; }
-  a:active {
-    text-decoration: none !important; }
+
+a:hover {
+  text-decoration: none !important; }
+
+a:visited {
+  text-decoration: none !important; }
+
+a:-webkit-any-link {
+  text-decoration: none !important; }
+
+a:active {
+  text-decoration: none !important; }
 
 .container, nav {
   margin: 0 auto; }
@@ -1750,12 +1790,14 @@ a {
   padding-right: 9%;
   margin-top: 12em;
   margin-bottom: 1em; }
-  .header h1 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    padding: 0; }
-  .header.high {
-    margin-top: 1em; }
+
+.header h1 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  padding: 0; }
+
+.header.high {
+  margin-top: 1em; }
 
 hr {
   margin-bottom: -1px; }
@@ -1773,11 +1815,14 @@ p {
   padding-left: 2%;
   padding-right: 2%;
   color: #111 !important; }
-  .item h2 {
-    margin-bottom: 2px;
-    margin-top: 0; }
-  .item a {
-    color: #111;
-    text-decoration: none !important; }
-  .item:hover {
-    background: #d4d4d4; }
+
+.item h2 {
+  margin-bottom: 2px;
+  margin-top: 0; }
+
+.item a {
+  color: #111;
+  text-decoration: none !important; }
+
+.item:hover {
+  background: #d4d4d4; }
