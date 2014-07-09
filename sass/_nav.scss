@@ -1,0 +1,282 @@
+@import 'vars';
+
+$height: 170px;
+
+// Big
+@media (min-width: 1040px) {
+
+  nav {
+    li {
+      &:not(:first-child) {
+        margin: {
+          left: -42px;
+        }
+        .label,
+        .fa {
+          padding: {
+            left: 9px !important;
+          }
+        }
+      }
+
+      .label {
+        top: 32px;
+      }
+
+      .fa {
+        font-size: 4em;
+        top: -32px;
+      }
+
+    }
+  }
+
+  .hexagon {
+    width: $height * 1.188235294;
+    height: $height;
+  }
+
+  .arrow {
+    width: $height * 1.058823529;
+    height: $height;
+  }
+}
+
+// Medium
+@media (min-width: 615px) and (max-width: 1040px) {
+
+  nav {
+    li {
+      &:not(:first-child) {
+        margin: {
+          left: -35px;
+        }
+        .label,
+        .fa {
+          padding: {
+            left: 6px !important;
+          }
+        }
+      }
+
+      .label {
+        top: 30px;
+      }
+
+      .fa {
+        font-size: 3.5em;
+        top: -25px;
+      }
+    }
+
+  }
+
+  .hexagon {
+    width: $height * 1.188235294 / 1.3;
+    height: $height;
+  }
+
+  .arrow {
+    width: $height * 1.058823529 / 1.3;
+    height: $height;
+  }
+
+}
+
+// Small
+@media (max-width: 615px) {
+
+}
+
+#nav-sidebar {
+  width: 0;
+  background: $gray;
+  padding: {
+    top: 20px;
+    bottom: 30px;
+    right: 0px;
+    left: 0px;
+  }
+  box-sizing: border-box;
+  height: 100vh;
+  float: left;
+  overflow: hidden;
+  -webkit-transition: width .25s, padding-right .25s, padding-left .25s;
+          transition: width .25s, padding-right .25s, padding-left .25s;
+  -webkit-transition-timing-function: ease-in-out;
+                     timing-function: ease-in-out;
+
+  &.open {
+    width: 25%;
+    max-width: 280px;
+    padding: {
+      top: 20px;
+      bottom: 30px;
+      right: 30px;
+      left: 30px;
+    }
+    -webkit-transition: width .25s, padding-right .25s, padding-left .25s;
+            transition: width .25s, padding-right .25s, padding-left .25s;
+    -webkit-transition-timing-function: ease-in-out;
+                       timing-function: ease-in-out;
+  }
+}
+
+#page {
+  float: left;
+  width: 100%;
+  -webkit-transition: width .25s;
+          transition: width .25s;
+  -webkit-transition-timing-function: ease-in-out;
+                     timing-function: ease-in-out;
+
+  &.nav-visible {
+    width: 75%;
+    -webkit-transition: width .25s;
+            transition: width .25s;
+    -webkit-transition-timing-function: ease-in-out;
+                       timing-function: ease-in-out;
+  }
+}
+
+#page-header {
+  padding: {
+    top: 15px;
+    bottom: 15px;
+  }
+  border-sizing: border-box;
+
+  h1 {
+    display: inline;
+    padding: {
+      left: 10px;
+    }
+  }
+
+  p {
+    margin: {
+      top: 10px;
+      bottom: 10px;
+    }
+  }
+
+  .fa-bars {
+    font-size: 2em;
+    cursor: pointer;
+  }
+}
+
+
+ul#tiny-nav {
+  list-style-type: none;
+  padding: {
+    left: 10px;
+  }
+
+  li {
+    -webkit-transition: padding-left .25s;
+            transition: padding-left .25s;
+
+    a {
+      color: $black;
+    }
+
+    &.home {
+      .fa {
+        color: darken($gray, 15);
+      }
+    }
+    &.projects {
+      .fa {
+        color: $red;
+      }
+    }
+    &.tools {
+      .fa {
+        color: $green;
+      }
+    }
+    &.contact {
+      .fa {
+        color: $yellow;
+        text-shadow: 0px 0px 5px $gray;
+      }
+    }
+
+    &:hover {
+      padding-left: 20px;
+      -webkit-transition: padding-left .25s;
+              transition: padding-left .25s;
+    }
+  }
+
+  .fa {
+    padding: {
+      right: 20px;
+    }
+  }
+}
+
+
+nav {
+  @extend .container;
+  display: block;
+  margin: 0 auto;
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+
+    .label,
+    .fa {
+      color: $white;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+  }
+}
+
+svg {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+
+  &.home {
+    path {
+      fill: grey;
+    }
+  }
+
+  &.projects {
+    path {
+      fill: $red;
+    }
+  }
+
+  &.tools {
+    path {
+      fill: $green;
+    }
+  }
+
+  &.contact {
+    path {
+      fill: darken($yellow, 2);
+    }
+  }
+
+  // &.nav {
+  //   height:
+  // }
+}

@@ -1,479 +1,150 @@
-@import 'font-awesome';
+@import 'vars.scss';
+@import 'fonts.scss';
+@import 'font-awesome/font-awesome.scss';
+@import 'utils.scss';
+@import 'nav.scss';
+@import 'tool.scss';
 
+
+// Big
 @media (min-width: 1040px) {
-  nav li:not(:first-child) {
-    margin-left: -42px; }
-    nav li:not(:first-child) .label, nav li:not(:first-child) .fa {
-      padding-left: 9px !important; }
-  nav li .label {
-    top: 32px; }
-  nav li .fa {
-    font-size: 4em;
-    top: -32px; }
-  .hexagon {
-    width: 202px;
-    height: 170px; }
-  .arrow {
-    width: 180px;
-    height: 170px; } }
+  .container {
+    width: 770px;
+  }
+}
 
+// Medium
 @media (min-width: 615px) and (max-width: 1040px) {
-  nav li:not(:first-child) {
-    margin-left: -35px; }
-    nav li:not(:first-child) .label, nav li:not(:first-child) .fa {
-      padding-left: 6px !important; }
-  nav li .label {
-    top: 30px; }
-  nav li .fa {
-    font-size: 3.5em;
-    top: -25px; }
-  .hexagon {
-    width: 155.38462px;
-    height: 170px; }
-  .arrow {
-    width: 138.46154px;
-    height: 170px; } }
-
-@media (max-width: 615px) { }
-
-#nav-sidebar {
-  width: 0;
-  background: #d4d4d4;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  padding-right: 0px;
-  padding-left: 0px;
-  box-sizing: border-box;
-  height: 100vh;
-  float: left;
-  overflow: hidden;
-  -webkit-transition: width 0.25s, padding-right 0.25s, padding-left 0.25s;
-  transition: width 0.25s, padding-right 0.25s, padding-left 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  timing-function: ease-in-out; }
-  #nav-sidebar.open {
-    width: 25%;
-    max-width: 280px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-    -webkit-transition: width 0.25s, padding-right 0.25s, padding-left 0.25s;
-    transition: width 0.25s, padding-right 0.25s, padding-left 0.25s;
-    -webkit-transition-timing-function: ease-in-out;
-    timing-function: ease-in-out; }
-
-#page {
-  float: left;
-  width: 100%;
-  -webkit-transition: width 0.25s;
-  transition: width 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  timing-function: ease-in-out; }
-  #page.nav-visible {
-    width: 75%;
-    -webkit-transition: width 0.25s;
-    transition: width 0.25s;
-    -webkit-transition-timing-function: ease-in-out;
-    timing-function: ease-in-out; }
-
-#page-header {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-sizing: border-box; }
-  #page-header h1 {
-    display: inline;
-    padding-left: 10px; }
-  #page-header p {
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  #page-header .fa-bars {
-    font-size: 2em;
-    cursor: pointer; }
-
-ul#tiny-nav {
-  list-style-type: none;
-  padding-left: 10px; }
-  ul#tiny-nav li {
-    -webkit-transition: padding-left 0.25s;
-    transition: padding-left 0.25s; }
-    ul#tiny-nav li a {
-      color: #111; }
-    ul#tiny-nav li.home .fa {
-      color: #aeaeae; }
-    ul#tiny-nav li.projects .fa {
-      color: #c40600; }
-    ul#tiny-nav li.tools .fa {
-      color: #2fbc52; }
-    ul#tiny-nav li.contact .fa {
-      color: #FFDC00;
-      text-shadow: 0px 0px 5px #d4d4d4; }
-    ul#tiny-nav li:hover {
-      padding-left: 20px;
-      -webkit-transition: padding-left 0.25s;
-      transition: padding-left 0.25s; }
-  ul#tiny-nav .fa {
-    padding-right: 20px; }
-
-nav {
-  display: block;
-  margin: 0 auto; }
-  nav ul {
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0; }
-  nav li {
-    display: inline;
-    position: relative;
-    text-align: center;
-    cursor: pointer; }
-    nav li .label, nav li .fa {
-      color: #fff;
-      left: 0;
-      position: absolute;
-      width: 100%; }
-
-svg {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle; }
-  svg.home path {
-    fill: grey; }
-  svg.projects path {
-    fill: #c40600; }
-  svg.tools path {
-    fill: #2fbc52; }
-  svg.contact path {
-    fill: #f5d000; }
-  svg.nav { }
-
-@-webkit-keyframes 'expandTool' {
-  0% {
-    height: 200px;
-    width: 48.5%; }
-
-  100% {
-    height: 250px;
-    width: 100%; } }
-
-@-moz-keyframes 'expandTool' {
-  0% {
-    height: 200px;
-    width: 48.5%; }
-
-  100% {
-    height: 250px;
-    width: 100%; } }
-
-@-o-keyframes 'expandTool' {
-  0% {
-    height: 200px;
-    width: 48.5%; }
-
-  100% {
-    height: 250px;
-    width: 100%; } }
-
-@-ms-keyframes 'expandTool' {
-  0% {
-    height: 200px;
-    width: 48.5%; }
-
-  100% {
-    height: 250px;
-    width: 100%; } }
-
-@keyframes 'expandTool' {
-  0% {
-    height: 200px;
-    width: 48.5%; }
-
-  100% {
-    height: 250px;
-    width: 100%; } }
-
-@-webkit-keyframes 'showToolContent' {
-  from {
-    opacity: 0; }
-
-  to {
-    opacity: 1; } }
-
-@-moz-keyframes 'showToolContent' {
-  from {
-    opacity: 0; }
-
-  to {
-    opacity: 1; } }
-
-@-o-keyframes 'showToolContent' {
-  from {
-    opacity: 0; }
-
-  to {
-    opacity: 1; } }
-
-@-ms-keyframes 'showToolContent' {
-  from {
-    opacity: 0; }
-
-  to {
-    opacity: 1; } }
-
-@keyframes 'showToolContent' {
-  from {
-    opacity: 0; }
-
-  to {
-    opacity: 1; } }
-
-@-webkit-keyframes 'hideToolContent' {
-  from {
-    opacity: 1; }
-
-  to {
-    opacity: 0; } }
-
-@-moz-keyframes 'hideToolContent' {
-  from {
-    opacity: 1; }
-
-  to {
-    opacity: 0; } }
-
-@-o-keyframes 'hideToolContent' {
-  from {
-    opacity: 1; }
-
-  to {
-    opacity: 0; } }
-
-@-ms-keyframes 'hideToolContent' {
-  from {
-    opacity: 1; }
-
-  to {
-    opacity: 0; } }
-
-@keyframes 'hideToolContent' {
-  from {
-    opacity: 1; }
-
-  to {
-    opacity: 0; } }
-
-.animation-expand-tool {
-  -webkit-animation-name: expandTool;
-  -moz-animation-name: expandTool;
-  -ms-animation-name: expandTool;
-  -o-animation-name: expandTool;
-  animation-name: expandTool;
-  -webkit-animation-duration: 0.35s;
-  -moz-animation-duration: 0.35s;
-  -ms-animation-duration: 0.35s;
-  -o-animation-duration: 0.35s;
-  animation-duration: 0.35s;
-  -webkit-animation-direction: normal;
-  -moz-animation-direction: normal;
-  -ms-animation-direction: normal;
-  -o-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out; }
-
-.animation-shrink-tool {
-  -webkit-animation-name: expandTool;
-  -moz-animation-name: expandTool;
-  -ms-animation-name: expandTool;
-  -o-animation-name: expandTool;
-  animation-name: expandTool;
-  -webkit-animation-duration: 0.35s;
-  -moz-animation-duration: 0.35s;
-  -ms-animation-duration: 0.35s;
-  -o-animation-duration: 0.35s;
-  animation-duration: 0.35s;
-  -webkit-animation-direction: reverse;
-  -moz-animation-direction: reverse;
-  -ms-animation-direction: reverse;
-  -o-animation-direction: reverse;
-  animation-direction: reverse;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out; }
-
-.animation-show-tool-content {
-  -webkit-animation-name: showToolContent;
-  -moz-animation-name: showToolContent;
-  -ms-animation-name: showToolContent;
-  -o-animation-name: showToolContent;
-  animation-name: showToolContent;
-  -webkit-animation-duration: 0.35s;
-  -moz-animation-duration: 0.35s;
-  -ms-animation-duration: 0.35s;
-  -o-animation-duration: 0.35s;
-  animation-duration: 0.35s;
-  -webkit-animation-direction: normal;
-  -moz-animation-direction: normal;
-  -ms-animation-direction: normal;
-  -o-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-.animation-hide-tool-content {
-  -webkit-animation-name: hideToolContent;
-  -moz-animation-name: hideToolContent;
-  -ms-animation-name: hideToolContent;
-  -o-animation-name: hideToolContent;
-  animation-name: hideToolContent;
-  -webkit-animation-duration: 0.35s;
-  -moz-animation-duration: 0.35s;
-  -ms-animation-duration: 0.35s;
-  -o-animation-duration: 0.35s;
-  animation-duration: 0.35s;
-  -webkit-animation-direction: normal;
-  -moz-animation-direction: normal;
-  -ms-animation-direction: normal;
-  -o-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-.tool {
-  background-color: #fafafa;
-  background-size: cover;
-  background-position: center center;
-  outline: 5px solid #fafafa;
-  display: block;
-  width: 48.5%;
-  height: 200px;
-  cursor: pointer;
-  overflow: hidden;
-  margin-top: 8px;
-  margin-bottom: 1em;
-  position: relative; }
-  .tool h2 {
-    bottom: 0;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    margin: 0;
-    padding: 5px;
-    width: 100%; }
-  .tool .content {
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 5px;
-    height: 100%;
-    width: 100%;
-    opacity: 0; }
-  .tool:nth-child(2n) {
-    float: left; }
-  .tool:nth-child(2n+1) {
-    float: right; }
-  .tool.expanded {
-    width: 100%;
-    height: 250px; }
-  .tool.tutorials p {
-    width: 60%;
-    float: left; }
-  .tool.tutorials ul {
-    width: 30%;
-    float: right;
-    padding-left: 0; }
-
-@media (min-width: 1040px) {
-  .container, nav {
-    width: 770px; } }
-
-@media (min-width: 615px) and (max-width: 1040px) {
-  .container, nav {
-    width: 600px; }
+  .container {
+    width: 600px;
+  }
   .header {
-    margin-bottom: 0 !important; } }
+    margin: {
+      bottom: 0 !important;
+    }
+  }
+}
 
+// Small
 @media (max-width: 615px) {
-  .container, nav {
-    widht: 100%; }
+  .container {
+    widht: 100%;
+  }
   .header {
-    margin-top: 1em !important;
-    padding-left: 1% !important;
-    padding-right: 1% !important; }
+    margin: {
+      top: 1em !important;
+    }
+    padding: {
+      left: 1% !important;
+      right: 1% !important;
+    }
+  }
   .flag {
-    display: none !important; }
+    display: none !important;
+  }
   .item {
-    padding-left: 1% !important;
-    padding-right: 1% !important;
+    padding: {
+      left: 1% !important;
+      right: 1% !important;
+    }
     border-radius: 0px 6px 6px 0px !important;
-    border-left: 4px solid #c40600; } }
+    border-left: 4px solid $red;
+  }
+}
 
 html, body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
+
 
 body {
   font-family: 'AmbleRegular';
-  background-color: #eee; }
+  background: {
+    color: $background;
+  }
+}
 
 a {
-  text-decoration: none !important; }
-  a:hover {
-    text-decoration: none !important; }
-  a:visited {
-    text-decoration: none !important; }
-  a:-webkit-any-link {
-    text-decoration: none !important; }
-  a:active {
-    text-decoration: none !important; }
+  text-decoration: none !important;
+  &:hover {
+    text-decoration: none !important;
+  }
+  &:visited {
+    text-decoration: none !important;
+  }
+  &:-webkit-any-link {
+    text-decoration: none !important;
+  }
+  &:active {
+    text-decoration: none !important;
+  }
+}
 
-.container, nav {
-  margin: 0 auto; }
+.container {
+  margin: 0 auto;
+}
 
 .header {
-  padding-left: 9%;
-  padding-right: 9%;
-  margin-top: 12em;
-  margin-bottom: 1em; }
-  .header h1 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    padding: 0; }
-  .header.high {
-    margin-top: 1em; }
+  padding: {
+    left: 9%;
+    right: 9%;
+  }
+  margin: {
+    top: 12em;
+    bottom: 1em;
+  }
+  h1 {
+    margin: {
+      top: 0;
+      bottom: .5em;
+    }
+    padding: 0;
+  }
+  &.high {
+    margin: {
+      top: 1em;
+    }
+  }
+}
+
+
 
 hr {
-  margin-bottom: -1px; }
+  margin: {
+    bottom: -1px;
+  }
+}
 
 p {
-  margin: 5px 0px; }
+  margin: 5px 0px;
+}
 
 .item {
   position: relative;
   border-radius: 6px;
-  margin-bottom: 2em;
+  margin: {
+    bottom: 2em;
+  }
   cursor: pointer;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 2%;
-  padding-right: 2%;
-  color: #111 !important; }
-  .item h2 {
-    margin-bottom: 2px;
-    margin-top: 0; }
-  .item a {
-    color: #111;
-    text-decoration: none !important; }
-  .item:hover {
-    background: #d4d4d4; }
+  padding: {
+    top: 12px;
+    bottom: 12px;
+    left: 2%;
+    right: 2%;
+  }
+  color: $black !important;
+  h2 {
+    margin: {
+      bottom: 2px;
+      top: 0;
+    }
+  }
+  a {
+    color: $black;
+    text-decoration: none !important;
+  }
+  &:hover{
+    background: $grey;
+  }
+}

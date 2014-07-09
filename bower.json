@@ -1,0 +1,19 @@
+{
+  "name": "alexlafroscia.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/alexlafroscia/alexlafroscia.github.io",
+  "authors": [
+    "Alex LaFroscia <alex@lafroscia.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "colors": "~2.0.0"
+  }
+}

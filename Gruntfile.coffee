@@ -77,8 +77,7 @@ module.exports = (grunt)->
           'sass/**/*.scss'
         ]
         tasks: [
-          'sass:build'
-          'jekyll:build'
+          'build'
         ]
         options: {
           livereload: true,
@@ -113,8 +112,13 @@ module.exports = (grunt)->
   # Development Server
   grunt.registerTask 'serve',
                      [
-                       'sass:build'
-                       'jekyll:build'
+                       'build'
                        'connect:server'
                        'watch:dev'
+                     ]
+
+  grunt.registerTask 'build',
+                     [
+                       'sass:build'
+                       'jekyll:build'
                      ]
