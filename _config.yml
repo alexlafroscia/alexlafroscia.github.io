@@ -1,0 +1,8 @@
+exclude: [
+  'bower_components',
+  'node_modules'
+]
+
+collections:
+  tools:
+    output: true

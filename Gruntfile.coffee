@@ -119,6 +119,5 @@ module.exports = (grunt)->
 
   grunt.registerTask 'build',
                      [
-                       'sass:build'
                        'jekyll:build'
                      ]
