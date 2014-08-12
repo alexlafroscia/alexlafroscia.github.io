@@ -72,9 +72,14 @@ module.exports = (grunt)->
       },
       dev: {
         files: [
-          'index.html'
-          'assets/**/*.*'
-          'sass/**/*.scss'
+          '**/*.html'
+          '**/*.yml'
+          '**/*.yaml'
+          '**/*.json'
+          '**/*.scss'
+          '**/*.coffee'
+          '!_site/**/*.*'
+          '**/*.md'
         ]
         tasks: [
           'build'
@@ -88,6 +93,9 @@ module.exports = (grunt)->
       build:
         src: '.'
         dest: '_site'
+        options:
+          drafts: true
+          lsi: true
     }
     connect:
       server:

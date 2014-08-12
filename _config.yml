@@ -3,6 +3,8 @@ exclude: [
   'node_modules'
 ]
 
+timezone: 'America/New_York'
+
 collections:
   tools:
     output: true

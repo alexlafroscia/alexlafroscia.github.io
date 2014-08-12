@@ -1,0 +1,78 @@
+@import 'vars';
+
+#nav-sidebar {
+  width: 25%;
+  max-width: 280px;
+  background: #d4d4d4;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  height: 100vh;
+  float: left;
+  overflow: hidden;
+
+  ul {
+    list-style-type: none;
+    padding-left: 10px;
+    margin: {
+      bottom: 3em;
+    }
+
+    li {
+      -webkit-transition: padding-left .25s;
+      transition: padding-left .25s;
+      display: block;
+
+      i {
+        float: left;
+      }
+
+      span {
+        float: right;
+        display: block;
+        width: 85%;
+      }
+
+      &:after {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+      }
+
+      a {
+        color: #111111;
+      }
+
+      &.home .fa {
+        color: #aeaeae;
+      }
+
+      &.projects .fa {
+        color: #c40600;
+      }
+
+      &.tools .fa {
+        color: #2fbc52;
+      }
+
+      &.contact .fa {
+        color: #ffdc00;
+        text-shadow: 0px 0px 5px #d4d4d4;
+      }
+
+      &.blog .fa {
+        color: $blog-blue;
+      }
+
+      &:hover {
+        padding-left: 20px;
+        -webkit-transition: padding-left .25s;
+        transition: padding-left .25s;
+      }
+    }
+  }
+}
