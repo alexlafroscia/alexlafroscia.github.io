@@ -78,8 +78,8 @@ module.exports = (grunt)->
           '**/*.json'
           '**/*.scss'
           '**/*.coffee'
-          '!_site/**/*.*'
           '**/*.md'
+          '!_site/**/*.*'
         ]
         tasks: [
           'build'
