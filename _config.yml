@@ -1,6 +1,12 @@
 exclude: [
   'bower_components',
-  'node_modules'
+  'node_modules',
+  'Gruntfile.coffee',
+  'bower.json',
+  'Gemfile',
+  'Gemfile.lock',
+  'package.json',
+  'Readme.md'
 ]
 
 timezone: 'America/New_York'
