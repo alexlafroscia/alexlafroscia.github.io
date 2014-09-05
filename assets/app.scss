@@ -7,6 +7,7 @@
 @import 'desktop/styles';
 @import 'tablet/styles';
 @import 'phone/styles';
+@import 'projects';
 
 .clearfix:before,
 .clearfix:after {
@@ -52,7 +53,7 @@
   }
 
   li {
-    display: inline;
+    display: inline-block;
     position: relative;
     text-align: center;
     cursor: pointer;
@@ -63,6 +64,14 @@
       position: absolute;
       width: 100%;
     }
+
+    // &:hover {
+    //   svg {
+    //     width: 200px;
+    //     height: 200px;
+    //   }
+    // }
+
 
   }
 
@@ -78,6 +87,7 @@ svg {
       fill: $color;
     }
   }
+
 }
 
 html, body {
