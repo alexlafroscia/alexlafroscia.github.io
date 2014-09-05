@@ -1,1 +1,9 @@
-$blog-blue: #31B9F6;
+@import 'colors';
+
+$links: (
+  home: $base0,
+  projects: $red,
+  blog: $blue,
+  tools: $green,
+  contact: $yellow
+);

@@ -4,6 +4,9 @@
 @import 'fonts';
 @import 'font-awesome';
 @import 'vars';
+@import 'desktop/styles';
+@import 'tablet/styles';
+@import 'phone/styles';
 
 .clearfix:before,
 .clearfix:after {
@@ -13,60 +16,13 @@
 .clearfix:after {
   clear: both; }
 
-@media (min-width: 1040px) {
-  nav li:not(:first-child) {
-    margin-left: -42px; }
-    nav li:not(:first-child) .label,
-    nav li:not(:first-child) .fa {
-      padding-left: 9px !important; }
-  nav li .label {
-    top: 32px; }
-  nav li .fa {
-    font-size: 4em;
-    top: -32px; }
-
-  .hexagon {
-    width: 202.0px;
-    height: 170px; }
-
-  .arrow {
-    width: 180.0px;
-    height: 170px; } }
-@media (min-width: 615px) and (max-width: 1040px) {
-  nav li:not(:first-child) {
-    margin-left: -35px; }
-    nav li:not(:first-child) .label,
-    nav li:not(:first-child) .fa {
-      padding-left: 6px !important; }
-  nav li .label {
-    top: 30px; }
-  nav li .fa {
-    font-size: 3.5em;
-    top: -25px; }
-
-  .hexagon {
-    width: 155.38462px;
-    height: 170px; }
-
-  .arrow {
-    width: 138.46154px;
-    height: 170px; } }
-
-
-
 #page {
-  float: left;
-  width: 100%;
-  -webkit-transition: width .25s;
-  transition: width .25s;
-  -webkit-transition-timing-function: ease-in-out;
-  timing-function: ease-in-out; }
-  #page.nav-visible {
-    width: 75%;
-    -webkit-transition: width .25s;
-    transition: width .25s;
-    -webkit-transition-timing-function: ease-in-out;
-    timing-function: ease-in-out; }
+  overflow: hidden;
+  padding: {
+    right: 1em;
+    left: 1em;
+  }
+}
 
 #page-header {
   padding-top: 15px;
@@ -84,83 +40,62 @@
 
 @import 'sidebar';
 
-nav {
+.bignav {
   display: block;
-  margin: 0 auto; }
-  nav ul {
+  margin: 0 auto;
+
+  ul {
     list-style-type: none;
     text-align: center;
     margin: 0;
-    padding: 0; }
-  nav li {
+    padding: 0;
+  }
+
+  li {
     display: inline;
     position: relative;
     text-align: center;
-    cursor: pointer; }
-    nav li .label,
-    nav li .fa {
+    cursor: pointer;
+
+    .label, .fa {
       color: white;
       left: 0;
       position: absolute;
-      width: 100%; }
+      width: 100%;
+    }
+
+  }
+
+}
 
 svg {
   position: relative;
   display: table-cell;
-  vertical-align: middle; }
-  svg.home path {
-    fill: grey; }
-  svg.projects path {
-    fill: #c40600; }
-  svg.tools path {
-    fill: #2fbc52; }
-  svg.contact path {
-    fill: #f5d300; }
+  vertical-align: middle;
 
-@media (min-width: 1040px) {
-  .container, nav {
-    width: 770px; } }
-@media (min-width: 615px) and (max-width: 1040px) {
-  .container, nav {
-    width: 600px; }
+  @each $item, $color in $links {
+    &.#{$item} path {
+      fill: $color;
+    }
+  }
+}
 
-  .header {
-    margin-bottom: 0 !important; } }
-@media (max-width: 615px) {
-  .container, nav {
-    widht: 100%; }
-
-  .header {
-    margin-top: 1em !important;
-    padding-left: 1% !important;
-    padding-right: 1% !important; }
-
-  .flag {
-    display: none !important; }
-
-  .item {
-    padding-left: 1% !important;
-    padding-right: 1% !important;
-    border-radius: 0px 6px 6px 0px !important;
-    border-left: 4px solid #c40600; } }
 html, body {
   margin: 0;
   padding: 0; }
 
 body {
   font-family: 'AmbleRegular';
-  background-color: #eeeeee; }
+  background-color: $base3; }
 
 a {
-  text-decoration: none !important; }
-  a:hover {
-    text-decoration: none !important; }
-  a:visited {
-    text-decoration: none !important; }
-  a:-webkit-any-link {
-    text-decoration: none !important; }
-  a:active {
-    text-decoration: none !important; }
+  text-decoration: none ;
+  color: $blue;
+
+  &:visited {
+    color: $violet;
+  }
+}
 
 .container, nav {
   margin: 0 auto; }
@@ -168,14 +103,23 @@ a {
 .header {
   padding-left: 9%;
   padding-right: 9%;
-  margin-top: 12em;
-  margin-bottom: 1em; }
-  .header h1 {
+  margin: {
+    top: 12em;
+    right: auto;
+    left: auto;
+  }
+
+  h1 {
     margin-top: 0;
     margin-bottom: .5em;
-    padding: 0; }
-  .header.high {
-    margin-top: 1em; }
+    padding: 0;
+  }
+
+  .high {
+    margin-top: 1em;
+  }
+
+}
 
 hr {
   margin-bottom: -1px; }

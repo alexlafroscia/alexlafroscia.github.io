@@ -1,0 +1,35 @@
+@media (min-width: 615px) and (max-width: 1040px) {
+  nav li:not(:first-child) {
+    margin-left: -35px; }
+    nav li:not(:first-child) .label,
+    nav li:not(:first-child) .fa {
+      padding-left: 6px !important; }
+  nav li .label {
+    top: 30px; }
+  nav li .fa {
+    font-size: 3.5em;
+    top: -25px; }
+
+  .hexagon {
+    width: 155.38462px;
+    height: 170px;
+  }
+
+  .arrow {
+    width: 138.46154px;
+    height: 170px;
+  }
+
+  .header {
+    width: 505px;
+    margin-bottom: 0;
+  }
+
+  #nav-sidebar {
+    width: 210px;
+  }
+
+  #page {
+    margin-left: 210px;
+  }
+}

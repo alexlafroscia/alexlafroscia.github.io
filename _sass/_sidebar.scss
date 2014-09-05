@@ -1,8 +1,6 @@
 @import 'vars';
 
 #nav-sidebar {
-  width: 25%;
-  max-width: 280px;
   background: #d4d4d4;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -10,8 +8,8 @@
   padding-left: 30px;
   box-sizing: border-box;
   height: 100vh;
-  float: left;
   overflow: hidden;
+  position: fixed;
 
   ul {
     list-style-type: none;
@@ -47,25 +45,10 @@
         color: #111111;
       }
 
-      &.home .fa {
-        color: #aeaeae;
-      }
-
-      &.projects .fa {
-        color: #c40600;
-      }
-
-      &.tools .fa {
-        color: #2fbc52;
-      }
-
-      &.contact .fa {
-        color: #ffdc00;
-        text-shadow: 0px 0px 5px #d4d4d4;
-      }
-
-      &.blog .fa {
-        color: $blog-blue;
+      @each $link, $color in $links {
+        &.#{$link} .fa {
+          color: $color;
+        }
       }
 
       &:hover {
