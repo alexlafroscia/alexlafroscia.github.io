@@ -14,3 +14,5 @@ timezone: 'America/New_York'
 collections:
   tools:
     output: true
+  projects:
+    output: true
