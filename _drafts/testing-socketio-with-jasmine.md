@@ -1,7 +1,6 @@
 ---
 title: Testing Socket.io with Jasmine
 layout: page
-permalink: testing-socketio-with-jasmine
 excerpt: This is a test
 ---
 
