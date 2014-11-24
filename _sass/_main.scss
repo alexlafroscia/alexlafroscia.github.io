@@ -19,16 +19,23 @@
 #page-header {
   padding-top: 15px;
   padding-bottom: 15px;
-  border-sizing: border-box; }
-  #page-header h1 {
+  border-sizing: border-box;
+
+  h1 {
     display: inline;
-    padding-left: 10px; }
-  #page-header p {
+    padding-left: 10px;
+  }
+
+  p {
     margin-top: 10px;
-    margin-bottom: 10px; }
-  #page-header .fa-bars {
+    margin-bottom: 10px;
+  }
+
+  .fa-bars {
     font-size: 2em;
-    cursor: pointer; }
+    cursor: pointer;
+  }
+}
 
 .bignav {
   display: block;
@@ -47,7 +54,8 @@
     text-align: center;
     cursor: pointer;
 
-    .label, .fa {
+    .label,
+    .fa {
       color: white;
       left: 0;
       position: absolute;
