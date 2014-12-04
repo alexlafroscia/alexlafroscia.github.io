@@ -5,4 +5,12 @@ nav {
 
 .page {
   @extend %paper;
+
+  margin: {
+    top: 3em;
+  }
+}
+
+.invisi-box {
+  @extend %page-width;
 }
