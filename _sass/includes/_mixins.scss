@@ -1,0 +1,21 @@
+/*
+ * Mixins
+ */
+
+
+// Media Query
+//
+// Usage:
+//   @include media-query($on-palm) {
+//     .wrapper {
+//       padding: 10px;
+//     }
+//   }
+//
+// Borrowed from the official Jekyll Sass starter files
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+

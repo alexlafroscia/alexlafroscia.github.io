@@ -1,12 +1,12 @@
 ---
 ---
 
-@import 'fonts';
-@import 'font-awesome';
-@import 'vars';
-@import 'desktop/styles';
-@import 'tablet/styles';
-@import 'phone/styles';
-@import 'projects';
-@import 'sidebar';
-@import 'main';
+@import
+  "fonts/fonts",
+  "fonts/font-awesome",
+  "includes/vars",
+  "includes/mixins",
+  "includes/placeholders",
+  "layout",
+  "base"
+;
