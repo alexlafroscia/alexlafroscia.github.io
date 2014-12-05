@@ -58,11 +58,14 @@ svg {
 
 html, body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  height: 100%;
+}
 
 body {
   font-family: 'AmbleRegular';
-  background-color: $base3; }
+  background-color: $base3;
+}
 
 a {
   text-decoration: none ;
@@ -165,4 +168,65 @@ p {
 
 .tagline {
   opacity: .8;
+}
+
+nav {
+  li {
+    &:not(:first-child) {
+      margin-left: -42px;
+
+      .label, .fa {
+        padding-left: 9px !important;
+      }
+    }
+
+    .label {
+      top: 32px;
+    }
+
+    .fa {
+      font-size: 4em;
+      top: -32px;
+    }
+  }
+}
+
+.hexagon {
+  width: 202.0px;
+  height: 170px; }
+
+.arrow {
+  width: 180.0px;
+  height: 170px;
+}
+
+
+.bignav {
+  .fa {
+    top: 38px;
+  }
+
+  .label {
+    top: 105px;
+  }
+}
+
+ul.social-bar {
+  margin-top: 2em;
+}
+
+.homepage {
+  $height: 666px;
+
+  @extend %vertical-align;
+  top: 45%;
+
+  hr, p, h1 {
+    margin: 0 auto;
+    width: $height;
+  }
+
+  hr {
+    margin: .5em auto;
+  }
 }

@@ -21,11 +21,40 @@
 
 
 %paper {
+  $padding: 2em;
+
   @extend %page-width;
 
   background-color: white;
   border-radius: 3px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, .2);
-  padding: 2em;
+  padding: $padding;
   box-sizing: border-box;
+
+  // First child of paper
+  > a:first-child h2 {
+    margin-top: 0;
+  }
+
+  > img:first-child {
+    margin: {
+      top: -$padding;
+      right: -$padding;
+      left: -$padding;
+    }
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+}
+
+
+// Vertical align anything
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
