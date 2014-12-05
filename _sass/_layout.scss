@@ -1,3 +1,5 @@
+$navbar-transition-time: .4s;
+
 .container,
 nav {
   margin: 0 auto;
@@ -20,14 +22,14 @@ nav {
 }
 
 .topnav {
-  $height: 100px;
+  $height: 200px;
 
   height: $height;
   margin-top: -$height;
   position: relative;
-  background-color: grey;
-  box-shadow: 0px -2px 6px 0px rgba(0, 0, 0, .5) inset;
-  @include transition("margin-top", .5s);
+  background-color: darken($background-color, 4);
+  box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, .2) inset;
+  @include transition("margin-top", $navbar-transition-time);
 
   &.visible {
     margin-top: 0;
@@ -55,7 +57,7 @@ header {
     line-height: 32px;
     cursor: pointer;
     @include transform(rotate(0deg));
-    @include transition("transform, -webkit-transform", .5s);
+    @include transition("transform, -webkit-transform", $navbar-transition-time);
 
     &.rotated {
       @include transform(rotate(90deg));

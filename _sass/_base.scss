@@ -64,7 +64,8 @@ html, body {
 
 body {
   font-family: 'AmbleRegular';
-  background-color: $base3;
+  background-color: $background-color;
+  overflow-y: hidden;
 }
 
 a {

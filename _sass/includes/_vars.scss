@@ -18,10 +18,8 @@ $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #65CC00;
 
-
 $github-brand: #333333;
 $twitter-brand: #53AEE8;
-
 
 $links: (
   projects: $red,
@@ -30,6 +28,8 @@ $links: (
   tools: $green,
   contact: $yellow
 );
+
+$background-color: $base3;
 
 // Device Widths
 $on-palm: 600px;
