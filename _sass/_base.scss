@@ -110,7 +110,6 @@ p {
   font-size: 5em;
   float: left;
   left: 50%;
-  margin-top: 2em;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
          -transform: translateX(-50%);
@@ -210,10 +209,6 @@ nav {
   .label {
     top: 105px;
   }
-}
-
-ul.social-bar {
-  margin-top: 2em;
 }
 
 .homepage {
