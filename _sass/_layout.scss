@@ -9,18 +9,10 @@ nav {
   @extend %paper;
 
   margin-top: 1em;
-
-  &:first-of-type {
-    margin-top: 3em;
-  }
 }
 
 .page {
   @extend %paper;
-
-  margin: {
-    top: 3em;
-  }
 }
 
 .invisi-box {
