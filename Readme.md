@@ -13,5 +13,4 @@ jekyll serve
 
 ```
 gem install jekyll
-bower install
 ```
