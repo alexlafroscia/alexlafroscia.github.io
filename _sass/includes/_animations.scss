@@ -1,0 +1,11 @@
+// Hamburger Icon Rotation
+
+@include animation-definition('bars-rotation') {
+  0% {
+    @include transform(rotate(0deg));
+  }
+
+  100% {
+    @include transform(rotate(90deg));
+  }
+}

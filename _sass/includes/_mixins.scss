@@ -20,3 +20,39 @@
 }
 
 
+@mixin animation-definition($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+
+@mixin animation($animation, $direction:null) {
+  -webkit-animation: bars-rotation .5s;
+          animation: bars-rotation .5s;
+
+  @if $direction != null {
+      -webkit-animation-direction: $direction;
+              animation-direction: $direction;
+  }
+}
+
+
+@mixin transform($animation) {
+  -webkit-transform: $animation;
+     -moz-transform: $animation;
+      -ms-transform: $animation;
+          transform: $animation;
+}
+
+
+@mixin transition($properties, $duration) {
+  transition-property: unquote($properties);
+  transition-duration: .5s;
+  -webkit-transition-property: unquote(transform);
+  -webkit-transition-duration: .5s;
+}
