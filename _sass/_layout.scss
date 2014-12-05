@@ -19,6 +19,22 @@ nav {
   @extend %page-width;
 }
 
+.topnav {
+  $height: 100px;
+
+  height: $height;
+  margin-top: -$height;
+  position: relative;
+  background-color: grey;
+  box-shadow: 0px -2px 6px 0px rgba(0, 0, 0, .5) inset;
+  @include transition("margin-top", .5s);
+
+  &.visible {
+    margin-top: 0;
+  }
+
+}
+
 header {
   @extend %page-width;
 
