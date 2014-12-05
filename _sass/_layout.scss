@@ -19,6 +19,34 @@ nav {
   @extend %page-width;
 }
 
+header {
+  @extend %page-width;
+
+  overflow: hidden;
+  margin: {
+    top: 1em;
+    bottom: 1em;
+  }
+
+  > h1 {
+    float: left;
+    margin: 0;
+  }
+
+  > .fa-bars {
+    float: right;
+    font-size: 1.7em;
+    line-height: 32px;
+    cursor: pointer;
+    @include transform(rotate(0deg));
+    @include transition("transform, -webkit-transform", .5s);
+
+    &.rotated {
+      @include transform(rotate(90deg));
+    }
+  }
+}
+
 footer {
   @extend %page-width;
 
