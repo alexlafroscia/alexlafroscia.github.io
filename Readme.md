@@ -6,17 +6,12 @@ Alex LaFroscia
 ### Dev Server
 
 ```
-bundle exec jekyll serve
+jekyll serve
 ```
 
 ### Install Dependencies
 
 ```
-bundle install
-```
-
-### Update Dependencies
-
-```
-bundle update
+gem install jekyll
+bower install
 ```
