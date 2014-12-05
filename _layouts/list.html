@@ -1,0 +1,18 @@
+---
+layout: site
+---
+
+{% include navigation.html %}
+
+<div class="invisi-box">
+  <h1>{{ page.title }}</h1>
+
+  {% if page.tagline %}
+    <h2 class="tagline">{{ page.tagline }}</h2>
+  {% endif %}
+
+</div>
+
+{{ content }}
+
+{% include footer.html %}

@@ -3,6 +3,18 @@ nav {
   margin: 0 auto;
 }
 
+
+// Paper and paper-like components
+.scrap {
+  @extend %paper;
+
+  margin-top: 1em;
+
+  &:first-of-type {
+    margin-top: 3em;
+  }
+}
+
 .page {
   @extend %paper;
 

@@ -1,19 +1,17 @@
 ---
 title: Projects
 tagline: "The big things that keep me going"
-layout: page
+layout: list
 permalink: /projects/
 ---
 
-<ul class='projects'>
-  {% for project in site.projects %}
+{% for project in site.projects %}
 
-  <li>
-    <a href="{{ project.url }}">
-      <h2>{{ project.title }}</h2>
-      <p>{{ project.excerpt }}</p>
-    </a>
-  </li>
+<div class="scrap">
+  <a href="{{ project.url }}">
+    <h2>{{ project.title }}</h2>
+  </a>
+  <p>{{ project.excerpt }}</p>
+</div>
 
-  {% endfor %}
-</ul>
+{% endfor %}
