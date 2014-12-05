@@ -32,8 +32,8 @@
 
 
 @mixin animation($animation, $direction:null) {
-  -webkit-animation: bars-rotation .5s;
-          animation: bars-rotation .5s;
+  -webkit-animation: $animation;
+          animation: $animation;
 
   @if $direction != null {
       -webkit-animation-direction: $direction;
@@ -53,6 +53,6 @@
 @mixin transition($properties, $duration) {
   transition-property: unquote($properties);
   transition-duration: .5s;
-  -webkit-transition-property: unquote(transform);
+  -webkit-transition-property: unquote($properties);
   -webkit-transition-duration: .5s;
 }
