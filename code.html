@@ -5,3 +5,13 @@ layout: list
 permalink: /code/
 ---
 
+{% for project in site.data.code %}
+
+<div class="scrap">
+  <a href="{{ project.url }}" target="_blank">
+    <h2>{{ project.title }}</h2>
+  </a>
+
+  {{ project.description }}
+</div>
+{% endfor %}

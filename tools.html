@@ -1,8 +1,18 @@
 ---
 title: Tools
-layout: page
+layout: list
 permalink: /tools/
+tagline: My favorite apps and development tools
 ---
 
-<h1>{{ page.title }}</h1>
+{% for tool in site.data.tools %}
 
+<div class="scrap">
+  <a href="{{ tool.url }}" target="_blank">
+    <h2>{{ tool.name }}</h2>
+  </a>
+
+  {{ tool.description }}
+</div>
+
+{% endfor %}

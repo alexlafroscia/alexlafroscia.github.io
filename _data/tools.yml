@@ -1,0 +1,10 @@
+- name: Vim
+  description: >
+    This is some information on Vim
+  url: https://github.com/alexlafroscia/dotfiles/blob/master/vimrc
+
+
+- name: Tmux
+  description: >
+    This is some information on Tmux
+  url: https://github.com/alexlafroscia/dotfiles/blob/master/tmux.conf

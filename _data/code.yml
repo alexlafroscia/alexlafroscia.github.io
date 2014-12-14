@@ -1,0 +1,12 @@
+- title: Conway's Game of Life
+  description: >
+    After attending the Global Coderetreat Weekend in 2014, I became really
+    interested in the Conway's Game of Life algorithm and wanted to finish an
+    implementation of it.  I had never worked with React.js before, so I decided
+    that it would be a good change to get my hands dirty with a new JS framework,
+    too.  It's still a work in progress, but I'm trying to do some interesting
+    things with it like make the board automatically fill the screen and allow
+    the visitor to manually toggle the dead/alive state of any of the cells.
+  url: http://alexlafroscia.com/conways-game-of-life/
+  repo: alexlafroscia/conways-game-of-life
+
