@@ -58,13 +58,14 @@ svg {
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
+  overflow: auto;
 }
 
 body {
   font-family: 'AmbleRegular';
   background-color: $background-color;
+  overflow-y: hidden;
 }
 
 a {
@@ -151,41 +152,17 @@ p {
 
 .hexagon {
   width: 202.0px;
-  height: 170px; }
+  height: 170px;
+}
 
 .arrow {
   width: 180.0px;
   height: 170px;
 }
 
-.littlenav {
-  $height: 75px;
-  $width: 90px;
-
-  padding: {
-    top: .5em;
-  }
-
-  li,
-  .hexagon,
-  .arrow {
-    height: $height;
-    width: $width;
-  }
-
-  li {
-    font-size: .7em;
-    position: relative;
-    display: inline-block;
-    float: left;
-  }
-}
-
 .homepage {
   $height: 666px;
-
-  @extend %vertical-align;
-  top: 45%;
+  margin-top: 15%;
 
   hr, p, h1 {
     margin: 0 auto;
