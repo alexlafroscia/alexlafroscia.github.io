@@ -15,6 +15,10 @@ nav {
 
 .page {
   @extend %paper;
+
+  img {
+    width: 100%;
+  }
 }
 
 .invisi-box {
