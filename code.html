@@ -8,10 +8,11 @@ permalink: /code/
 {% for project in site.data.code %}
 
 <div class="scrap">
-  <a href="{{ project.url }}" target="_blank">
-    <h2>{{ project.title }}</h2>
-  </a>
+  <h2>
+    <a href="{{ project.url }}" target="_blank">{{ project.title }}</a>
+  </h2>
 
   {{ project.description }}
 </div>
+
 {% endfor %}

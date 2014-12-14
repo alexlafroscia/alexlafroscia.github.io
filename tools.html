@@ -8,9 +8,9 @@ tagline: My favorite apps and development tools
 {% for tool in site.data.tools %}
 
 <div class="scrap">
-  <a href="{{ tool.url }}" target="_blank">
-    <h2>{{ tool.name }}</h2>
-  </a>
+  <h2>
+    <a href="{{ tool.url }}" target="_blank">{{ tool.name }}</a>
+  </h2>
 
   {{ tool.description }}
 </div>
