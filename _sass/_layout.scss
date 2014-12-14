@@ -65,6 +65,48 @@ header {
   }
 }
 
+.pagenav {
+  float: right;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .label {
+    display: none;
+  }
+
+  li {
+    display: inline;
+    padding-left: .5em;
+
+    &:hover {
+      .label {
+        display: inline;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  @each $site, $color in $links {
+    .#{$site} {
+      color: $color;
+
+      &:hover {
+        color: darken($color, 5);
+      }
+
+      &:visited {
+        color: $color;
+      }
+    }
+  }
+}
+
 footer {
   @extend %page-width;
 

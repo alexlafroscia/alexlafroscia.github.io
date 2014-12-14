@@ -2,8 +2,6 @@
 layout: site
 ---
 
-{% include navigation.html %}
-
 <header>
   <h1>
     {{ page.title }}
@@ -13,7 +11,8 @@ layout: site
     {% endif %}
   </h1>
 
-  <i class="fa fa-bars"></i>
+  {% include navigation.html %}
+
 
 </header>
 
