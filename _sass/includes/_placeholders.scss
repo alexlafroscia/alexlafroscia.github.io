@@ -59,3 +59,8 @@
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
