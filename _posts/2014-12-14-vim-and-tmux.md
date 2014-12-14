@@ -13,4 +13,8 @@ If you're not familiar with Vim, it is an extremely powerful text editor that ha
 
 Tmux, short for "Terminal Multiplexer", allows you to run multiple terminal sessions within a single open application, letting you jump between them easily with keyboad shortcuts.  This allows you to have mutliple tabs (called a `window` in Tmux parlance) open simultaneously, each divided into multiple `panes`, which you can view simultaneously.  What's neat about this is that it allows you to have Vim open right next to your development server (or test suite, or whatever you're working on), and you're just a quick keyboard shortcut away from moving from one to the other.
 
-![Terminal Screenshot](http://cl.ly/Yxch/Screen%20Shot%202014-12-14%20at%2012.57.37%20PM.png)
+
+<a href="http://cl.ly/Yxch/Screen%20Shot%202014-12-14%20at%2012.57.37%20PM.png">
+  ![Terminal Screenshot](http://cl.ly/Yxch/Screen%20Shot%202014-12-14%20at%2012.57.37%20PM.png)
+</a>
+
