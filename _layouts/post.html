@@ -1,0 +1,23 @@
+---
+layout: site
+---
+
+<header>
+  <h1>
+    Blog
+
+    {% if site.pages.blog.tagline %}
+      <span class="tagline"> | {{ site.pages.blog.tagline }}</h1>
+    {% endif %}
+  </h1>
+
+  {% include navigation.html %}
+
+
+</header>
+
+<div class="page">
+  {{ content }}
+</div>
+
+{% include footer.html %}
