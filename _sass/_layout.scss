@@ -21,22 +21,6 @@ nav {
   @extend %page-width;
 }
 
-.topnav {
-  $height: 130px;
-
-  height: $height;
-  margin-top: -$height;
-  position: relative;
-  background-color: darken($background-color, 4);
-  box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, .2) inset;
-  @include transition("margin-top", $navbar-transition-time);
-
-  &.visible {
-    margin-top: 0;
-  }
-
-}
-
 header {
   @extend %page-width;
 
@@ -49,19 +33,6 @@ header {
   > h1 {
     float: left;
     margin: 0;
-  }
-
-  > .fa-bars {
-    float: right;
-    font-size: 1.7em;
-    line-height: 32px;
-    cursor: pointer;
-    @include transform(rotate(0deg));
-    @include transition("transform, -webkit-transform", $navbar-transition-time);
-
-    &.rotated {
-      @include transform(rotate(90deg));
-    }
   }
 }
 
