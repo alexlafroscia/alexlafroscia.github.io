@@ -188,3 +188,11 @@ p {
     margin: .5em auto;
   }
 }
+
+.highlight {
+  $spacing-amount: 1em;
+
+  border-radius: 4px;
+  margin: $spacing-amount 0;
+  padding: ($spacing-amount / 2) $spacing-amount;
+}
