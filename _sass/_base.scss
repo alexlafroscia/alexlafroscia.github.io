@@ -55,11 +55,13 @@ svg {
 
 }
 
-html, body {
+html,
+body {
+  height: 100%;
   margin: 0;
+  overflow: auto;
   padding: 0;
   width: 100%;
-  overflow: auto;
 }
 
 body {
@@ -175,9 +177,16 @@ p {
   height: 170px;
 }
 
-.homepage {
+#homepage-wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+#homepage {
   $height: 666px;
-  margin-top: 15%;
+
+  height: 400px;
 
   hr, p, h1 {
     margin: 0 auto;
