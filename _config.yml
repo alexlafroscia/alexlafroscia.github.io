@@ -7,8 +7,6 @@ exclude: [
   'Readme.md'
 ]
 
-highlighter: rouge
-
 timezone: 'America/New_York'
 
 collections:
