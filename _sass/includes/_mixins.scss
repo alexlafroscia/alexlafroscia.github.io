@@ -1,19 +1,21 @@
-// Media Query
-//
-// Usage:
-//   @include media-query($on-palm) {
-//     .wrapper {
-//       padding: 10px;
-//     }
-//   }
-//
-// Borrowed from the official Jekyll Sass starter files
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
+// Responsive Boundaries
+@mixin size-between($smaller, $larger) {
+  @media screen and (min-width: $smaller) and (max-width: $larger) {
     @content;
   }
 }
 
+@mixin size-greater-than($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin size-less-than($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
 
 @mixin animation-definition($name) {
   @-webkit-keyframes #{$name} {

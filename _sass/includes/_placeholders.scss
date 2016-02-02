@@ -6,11 +6,11 @@
   max-width: 900px;
   width: 80%;
 
-  @include media-query($on-laptop) {
+  @include size-less-than($medium) {
     width: 600px;
   }
 
-  @include media-query($on-palm) {
+  @include size-less-than($small) {
     width: 95%;
   }
 }
