@@ -1,58 +1,42 @@
-.bignav {
-  display: block;
-  margin: 0 auto;
+$svg-medium-modifier: .8;
+$nav-icon-height: 170px;
+$point-width: $nav-icon-height * .300699301;
 
-  ul {
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+.bignav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 $point-width;
+  max-width: 100%;
+  width: 666px;
+}
+
+.nav-icon {
+  display: block;
+
+  &.hexagon {
+    width: $nav-icon-height * .587412587;  // Correct ratio for width
+
+    svg {
+      margin-left: -$point-width;
+    }
   }
 
-  li {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    cursor: pointer;
+  &.arrow {
+    $arrow-width: $nav-icon-height * .762237762; // Correct ratio for width
 
-    &:not(:first-child) {
-      margin-left: -42px;
+    width: $arrow-width;
+  }
 
-      .label, .fa {
-        padding-left: 9px !important;
+  svg {
+    height: $nav-icon-height;
+
+    @each $item, $color in $links {
+      &.#{$item} path {
+        fill: $color;
       }
     }
   }
-
-  .label,
-  .fa {
-    color: white;
-    left: 0;
-    position: absolute;
-    width: 100%;
-  }
-
-  .fa {
-    top: 38px;
-    font-size: 4em;
-  }
-
-  .label {
-    top: 105px;
-  }
-}
-
-svg {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
-
-  @each $item, $color in $links {
-    &.#{$item} path {
-      fill: $color;
-    }
-  }
-
 }
 
 html,
@@ -65,8 +49,8 @@ body {
 }
 
 body {
-  font-family: 'AmbleRegular';
   background-color: $background-color;
+  font-family: 'AmbleRegular';
   overflow-y: hidden;
 }
 
@@ -167,30 +151,23 @@ p {
   font-size: .6em;
 }
 
-.hexagon {
-  width: 202.0px;
-  height: 170px;
-}
-
-.arrow {
-  width: 180.0px;
-  height: 170px;
-}
-
 #homepage-wrapper {
   align-items: center;
   display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
 #homepage {
-  $height: 666px;
+  $item-width: 666px;
 
-  height: 400px;
+  margin: 0 auto;
 
-  hr, p, h1 {
+  hr,
+  p,
+  h1 {
     margin: 0 auto;
-    width: $height;
+    width: $item-width;
   }
 
   hr {
