@@ -12,7 +12,33 @@ $point-width: $nav-icon-height * .300699301;
 }
 
 .nav-icon {
+  color: white;
   display: block;
+  height: $nav-icon-height;
+  position: relative;
+
+  &:visited {
+    color: white;
+  }
+
+  .inner-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .fa {
+    font-size: 4em;
+  }
+
+  .label {
+    padding-bottom: 1em;
+  }
 
   &.hexagon {
     width: $nav-icon-height * .587412587;  // Correct ratio for width
@@ -26,6 +52,10 @@ $point-width: $nav-icon-height * .300699301;
     $arrow-width: $nav-icon-height * .762237762; // Correct ratio for width
 
     width: $arrow-width;
+
+    .inner-content {
+      margin-left: 2em;
+    }
   }
 
   svg {
